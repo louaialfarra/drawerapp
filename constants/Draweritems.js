@@ -1,16 +1,16 @@
 export default [
   {
-    name: "home",
+    name: "Home",
     iconType: "Feather",
     iconName: "house",
   },
   {
-    name: "sun",
+    name: "Sun",
     iconType: "Feather",
     iconName: "sun",
   },
   {
-    name: "cart",
+    name: "Cart",
     iconType: "Feather",
     iconName: "cart",
   },

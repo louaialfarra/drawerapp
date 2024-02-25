@@ -6,6 +6,7 @@ import Cart from "./screens/Cart";
 import Products from "./screens/Products";
 import Homepage from "./screens/Homepage";
 import Draweritems from "./constants/Draweritems";
+import Header from "./components/Header";
 
 const Drawer = createDrawerNavigator();
 
@@ -15,10 +16,11 @@ export default function App() {
       <Drawer.Navigator
         drawerType="front"
         initialRouteName="Homepage"
-        screenOptions={{
+        screenOptions={({ navigation, route }) => ({
           activeTintColor: "#e91e63",
           itemStyle: { marginVertical: 10 },
-        }}
+          header: () => <Header navigation={navigation} title={route.name} />,
+        })}
       >
         {Draweritems.map((drawer) => (
           <Drawer.Screen

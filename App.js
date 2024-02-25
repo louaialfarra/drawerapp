@@ -9,16 +9,12 @@ import Draweritems from "./constants/Draweritems";
 
 const Drawer = createDrawerNavigator();
 
-function HomeScreen() {
-  return <Text>Home Screen</Text>;
-}
-
 export default function App() {
   return (
     <NavigationContainer>
       <Drawer.Navigator
         drawerType="front"
-        initialRouteName="Home"
+        initialRouteName="Homepage"
         screenOptions={{
           activeTintColor: "#e91e63",
           itemStyle: { marginVertical: 10 },
@@ -31,7 +27,7 @@ export default function App() {
             component={
               drawer.name === "Home"
                 ? Homepage
-                : drawer.name === "Sun"
+                : drawer.name === "Cart"
                 ? Cart
                 : Products
             }

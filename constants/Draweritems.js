@@ -10,7 +10,7 @@ export default [
     iconName: "sun",
   },
   {
-    name: "Cart",
+    name: "Cartar",
     iconType: "Feather",
     iconName: "cart",
   },

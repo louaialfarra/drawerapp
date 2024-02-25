@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from "react-native";
 export default function Cart() {
   return (
     <View style={style.container}>
-      <Text style={style.title}>this is Home page </Text>
+      <Text style={style.title}>this is Cart </Text>
     </View>
   );
 }
